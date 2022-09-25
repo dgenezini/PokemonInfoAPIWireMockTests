@@ -18,7 +18,7 @@ namespace PokemonInfoAPI.IntegrationTests
             _factory = factory;
         }
         [Fact]
-        public async Task Buscar_Pokemon_Existente_Retorna_200()
+        public async Task Get_Existing_Pokemon_Returns_200()
         {
             //Arrange
             var WireMockSvr = WireMockServer.Start();
@@ -60,7 +60,7 @@ namespace PokemonInfoAPI.IntegrationTests
         }
 
         [Fact]
-        public async Task Buscar_Pokemon_Inexistente_Retorna_404()
+        public async Task Get_NotExisting_Pokemon_Returns_404()
         {
             //Arrange
             var WireMockSvr = WireMockServer.Start();
